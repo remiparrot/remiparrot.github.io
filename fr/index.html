@@ -59,21 +59,52 @@
 			</div>
         </div>
         <div class="col-md-8">
-            <h2>À propos</h2>
-            <p>
-			Je suis actuellement en troisième année de thèse de doctorat, sous la direction de
-			<a href="http://pagesperso.ls2n.fr/~roux-o/">Olivier H. Roux</a>,
-			<a href="http://pagesperso.ls2n.fr/~briday-m/">Mikaël Briday</a> et
-			<a href="https://www.ls2n.fr/annuaire/Malek%20GHANES/">Malek Ghanes</a> au
-			<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
-			Ce travail a débuté en Octobre 2019, et se terminera en Octobre 2022.
-			</p>
-			<p>
-			L'objectif de cette thèse est d'être capable de générer automatiquement un circuit logique (décrit en VHDL)
-			réalisant une commande décrite en Simulink, sur une cible FPGA.
-			Le circuit engendré doit respecté des contraintes temporelles (chemin critique maximal) et des contraintes de ressources (unité logiques limités).
-			Cette thèse fait partie de la chaire industrielle <a href="https://renault-chair.ec-nantes.fr/">Renault - Centrale Nantes</a>.
-			</p>
+					<h2>À propos</h2>
+					<h3>Travail actuel</h3>
+					<p>
+						J'occupe actuellement un poste de post-doctorant en collaboration avec <a href="https://user.it.uu.se/~kostis/">Kostis Sagonas</a> et <a href="https://user.it.uu.se/~bengt/">Bengt Jonsson</a> à l'<a href="http://uu.se">Université d'Uppsala</a>.
+						Ce travail s'inscrit dans le projet <a href="https://assist-project.github.io/">aSSIsT</a> qui s'intéresse aux problématiques de sécurité pour l'Internet des Objets.
+					</p>
+					<p>
+						Notre objectif est de trouver des vulnérabilités liées à la mémoire dans les implémentations de protocoles de communication (en particulier DTLS).
+						Nous appliquons pour cela une technique de test appelé <em>fuzzing</em>, qui consiste à fournir des entrées aléatoires au système testé jusqu'à ce qu'un bug survienne.
+					</p>
+					<p>
+						Les protocoles de communication ont la particularité d'être (généralement) des machines à états.
+						Nous exploitons cette particularité en guidant le fuzzing par une approche consciente des états du système.
+						Tout d'abord, nous construisons une machine à états du système à l'aide de techniques d'<a href="https://dx.doi.org/10.14722/ndss.2023.23068">apprentissage de modèles</a>.
+						Ensuite, nous générons des entrées permettant de placer le système dans chacun des états et nous commençons le fuzzing à partir de là.
+						L'espoir est de découvrir des vulnérabilités qui serait spécifique à un état.
+					</p>
+					<h3>Thèse de doctorat</h3>
+					<p>
+						J'ai eut la chance de faire une thèse de doctorat, sous la direction de
+						<a href="http://pagesperso.ls2n.fr/~roux-o/">Olivier H. Roux</a>,
+						<a href="http://pagesperso.ls2n.fr/~briday-m/">Mikaël Briday</a> et
+						<a href="https://www.ls2n.fr/annuaire/Malek%20GHANES/">Malek Ghanes</a> au
+						<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
+						Ce travail a débuté en Octobre 2019, et s'est terminé en Novembre 2022.
+					</p>
+					<p>
+						L'objectif de cette thèse était d'être capable de générer automatiquement un circuit logique (décrit en VHDL)
+						réalisant une commande décrite en Simulink, sur une cible FPGA.
+						Le circuit engendré doit respecté des contraintes temporelles (chemin critique maximal) et des contraintes de ressources (unité logiques limités).
+						Cette thèse fait partie de la chaire industrielle <a href="https://renault-chair.ec-nantes.fr/">Renault - Centrale Nantes</a>.
+					</p>
+					<p>
+						Ce travail propose de nouvelles méthodes pour l'optimisation de la <a href="https://hal.science/hal-03464317">synthèse de pipeline</a> et pour permettre le <a href="https://hal.science/hal-03952519">pliage de circuits</a> (ou le multiplexage temporel).
+						Cela a également été l'occasion de contribuer dans le domaine des méthodes formelles.
+						Nous avons été amenés à concevoir un <a href="https://hal.science/hal-03266806">nouveau modèle</a> de réseau de Petri avec du temps, qui a pour spécificités d'avoir des transitions qui peuvent attendre pour tirer (delayable) et une exécution synchrone (sémantique du pas maximal).
+						Après avoir longuement joué avec ce modèle, il s'est finalement avéré être intéressant en lui-même !
+						(quelques résultats rigolos d'expressivité <a href="https://hal.science/hal-03952599">ici</a>)
+					</p>
+					<h3>Thèse de Master</h3>
+					<p>
+						J'ai pu travailler sous la direction de <a href="http://pagesperso.ls2n.fr/~lime-d/">Didier Lime</a> pendant ma thèse de master à
+						<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
+						Nous nous sommes intéressés aux Automates et Jeux temporisés à coût.
+						Ceci nous a amené à construire un algorithme pour résoudre le problème d'accessibilité optimale dans les automates temporisés à coût, se basant sur une <a href="https://hal.science/hal-02939596">exploration symbolique en aarière</a>.
+					</p>
 			<div class="row">
 				<div class="col-md-5">
 					<div class="card border-light mb-3">
@@ -85,6 +116,7 @@
 								<li>Vérification</li>
 								<li>Automate &#38; Réseau de Petri</li>
 								<li>Synthèse de circuit</li>
+								<li>Fuzzing</li>
 							</ul>
 						</div>
 					  </div>
@@ -100,8 +132,8 @@
 								<tr>
 									<th scope="row"><i class="bi bi-mortarboard-fill" style="font-size: 2rem"></i></th>
 									<td>
-										Classe Préparatoire (PSI), 2013-2015<br/>
-										<em class="text-muted">Lycée Bellevue, Toulouse</em>
+										Doctorat en Informatique, 2019-2022<br/>
+										<em class="text-muted">École Centrale de Nantes - LS2N</em>
 									</td>
 								</tr>
 								<tr>
@@ -109,6 +141,13 @@
 									<td>
 										École d'Ingénieur, 2015-2019<br/>
 										<em class="text-muted">École Centrale de Nantes</em>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class="bi bi-mortarboard-fill" style="font-size: 2rem"></i></th>
+									<td>
+										Classe Préparatoire (PSI), 2013-2015<br/>
+										<em class="text-muted">Lycée Bellevue, Toulouse</em>
 									</td>
 								</tr>
 							</tbody>
@@ -122,14 +161,10 @@
       </div>
     </div>
     <hr>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="copyright text-muted">&copy; Rémi Parrot - 2022</p>
-        </div>
-      </div>
-    </div>
-    <script src="/assets/jquery.slim.min.js"></script>
-    <script src="/assets/bootstrap.bundle.min.js"></script>
   </body>
+	<footer class="text-center text-muted">
+			<p class="float-right">Dernière mise à jour : 10/05/2023</p>
+	</footer>
+	<script src="/assets/jquery.slim.min.js"></script>
+	<script src="/assets/bootstrap.bundle.min.js"></script>
 </html>
