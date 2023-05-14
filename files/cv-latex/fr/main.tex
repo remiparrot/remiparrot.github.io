@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvtheme[blue]{casual} 
+%\moderncvstyle{casual} 
+%\moderncvcolor{blue}
+
+\setlength{\hintscolumnwidth}{2cm} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\usepackage{helvet}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+	\graphicspath{{fig}}
+
+\name{Rémi}{Parrot}
+\title{Doctorant} 
+\address{1 rue de la Noë}{44\,100 Nantes}{France}
+%\phone[mobile]{+33~6~45~73~27~67}
+\email{remi.parrot@ec-nantes.fr}
+\homepage{remiparrot.github.io}
+%\social[linkedin]{pierre.durand}
+%\social[twitter]{pierre.durand}
+%\social[github]{pierre.durand}
+%\extrainfo{informations complémentaires.}
+\photo[64pt][0.4pt]{fig/photo}
+%\quote{Encore un titre}
+
+\begin{document}
+
+\maketitle
+
+\section{Formation}
+\cventry{2013}{Baccalauréat S}{Lycée La Borde Basse}{Castres}{\textit{Spécialité SVT}}{}
+\cventry{2013--2015}{Classes Préparatoire}{Lycée Bellevue}{Toulouse}{\textit{Spécialité PSI}}{}
+\cventry{2015--2019}{Diplôme d'Ingénieur}{Centrale Nantes (ECN)}{Nantes}{\textit{Spécialité Informatique}}{}
+%\cventry{2019--2022}{PhD}{Centrale Nantes (ECN)}{Nantes}{\textit{Automatic Generation of VHDL Code for Electric Vehicle Chargers}}{}
+
+\section{Thèse de Doctorat}
+\cvline{titre}{Génération automatique de code VHDL pour des Chargeurs de Véhicules Électriques}
+\cvline{direction}{Olivier H. Roux, Mikaël Briday et Malek Ghanes}
+\cvline{description}{L'objectif de cette thèse est d'être capable de générer automatiquement un circuit logique (décrit en VHDL) réalisant une commande décrite en Simulink, sur une cible FPGA. Le circuit engendré doit respecté des contraintes temporelles (chemin critique maximal) et des contraintes de ressources (unité logiques limités). Cette thèse fait partie de la chaire industrielle Renault - Centrale Nantes.}
+\cvline{date}{2019--2022}
+
+\section{Langues}
+\cvlanguage{Français}{Langue maternelle}{}
+\cvlanguage{Anglais}{Lu, écrit, parlé}{(niveau C1)}
+\cvlanguage{Espagnol}{Lu, écrit, parlé}{(niveau C1)}
+
+\section{Outils}
+\cvdoubleitem{Langages}{C, C++, Python, VHDL}{Compilation}{GCC,GDB,Xilinx Vivado}
+\cvdoubleitem{Vérification}{Roméo, Uppaal}{Compilateur}{Flex, Bison, Galgas}
+\cvdoubleitem{Versioning}{Git}{Formatage}{\LaTeX}
+
+\section{Loisirs}
+\cvlistdoubleitem{Cirque}{Bricolage}
+\cvlistdoubleitem{Escalade}{Arts Plastiques}
+
+\newpage
+\section{Expérience Professionnelle}
+\cventry{Jui.--Aou. 2016}{Stage 1ère année}{CCL}{Service Informatique}{Castres--France}{Développement web et logiciel pour une entreprise commerciale.}
+\cventry{Avr.--Aou. 2017}{Stage 2ème année}{Universidad Complutense}{GASS (Grupo de Análisis, Seguridad y Sistemas)}{Madrid--Spain}{Travail de Recherche en analyse forensique.}
+\cventry{Sep.--Oct. 2017}{Formation en année de Césure}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{Portage de Trampoline RTOS sur un microcontrôleur SAM3X8E basé sur un processeur ARM Cortex-M3.}
+\cventry{Nov.~2017--Avr.~2018}{Stage en année de Césure}{Valwin}{Service Informatique}{Nantes--France}{Amélioration des outils de producation de site de web de pharmacie.}
+\cventry{Avr.--Aou. 2019}{Stage de 3ème année}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{Travail de Recherche portant sur le control de modèles formels avec du temps et des coûts.}
+\cventry{Sep.~2019--$\cdots$}{Thèse de Doctorat}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{%
+	\begin{itemize}
+		\item Développement d'une approche de synthèse de pipeline avec des contraintes de temps et de ressources, basée sur des Réseaux de Petri Temporisés;
+		\item Implémentation d'un outil de compilation Simulink vers VHDL;
+		\item Construction d'un cours de VHDL pour des master M1 (master CORO à l'ECN);
+		\item Enseignements et encadrement de projet d'étudiants (en master et dans le cursus ingénieur de l'ECN).
+	\end{itemize}
+	}
+
+\renewcommand{\refname}{Publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\end{document}
