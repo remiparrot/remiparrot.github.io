@@ -13,11 +13,15 @@
 \usepackage{graphicx}
 	\graphicspath{{fig}}
 
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
 \name{Rémi}{Parrot}
-\title{Doctorant} 
-\address{1 rue de la Noë}{44\,100 Nantes}{France}
+\title{Post-doc} 
+\address{Lägerhyddsvägen 1}{752\,37 Uppsala}{Sweden}
 %\phone[mobile]{+33~6~45~73~27~67}
-\email{remi.parrot@ec-nantes.fr}
+\email{remi.parrot@it.uu.se}
 \homepage{remiparrot.github.io}
 %\social[linkedin]{pierre.durand}
 %\social[twitter]{pierre.durand}
@@ -31,16 +35,46 @@
 \maketitle
 
 \section{Formation}
-\cventry{2013}{Baccalauréat S}{Lycée La Borde Basse}{Castres}{\textit{Spécialité SVT}}{}
-\cventry{2013--2015}{Classes Préparatoire}{Lycée Bellevue}{Toulouse}{\textit{Spécialité PSI}}{}
+\cventry{2019--2022}{Diplôme de doctorat}{Centrale Nantes (ECN)}{Nantes}{\textit{Réseaux de Petri temporisés pour la synthèse de circuits pipelinés}}{}
 \cventry{2015--2019}{Diplôme d'Ingénieur}{Centrale Nantes (ECN)}{Nantes}{\textit{Spécialité Informatique}}{}
-%\cventry{2019--2022}{PhD}{Centrale Nantes (ECN)}{Nantes}{\textit{Automatic Generation of VHDL Code for Electric Vehicle Chargers}}{}
+\cventry{2013--2015}{Classes Préparatoire}{Lycée Bellevue}{Toulouse}{\textit{Spécialité PSI}}{}
+\cventry{2013}{Baccalauréat S}{Lycée La Borde Basse}{Castres}{\textit{Spécialité SVT}}{}
 
-\section{Thèse de Doctorat}
+\section{Expérience Professionnelle}
+\cventry{Nov.~2022--$\dots$}{Post-doc}{Uppsala Universitet}{CSD (Computer Science Division)}{Uppsala--Sweden}{Recherche sur le fuzzing de machine à états appliqué aux protocoles de communication.}
+\cventry{Sep.~2019--Nov.~2022}{Thèse de Doctorat}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{%
+	\begin{itemize}
+		\item Développement d'une approche de synthèse de pipeline avec des contraintes de temps et de ressources, basée sur des Réseaux de Petri Temporisés;
+		\item Implémentation d'un outil de compilation Simulink vers VHDL;
+		\item Construction d'un cours de VHDL pour des master M1 (master CORO à l'ECN);
+		\item Enseignements et encadrement de projet d'étudiants (en master et dans le cursus ingénieur de l'ECN).
+	\end{itemize}
+	}
+\cventry{Avr.--Aou. 2019}{Stage de 3ème année}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{Travail de Recherche portant sur le control de modèles formels avec du temps et des coûts.}
+\cventry{Nov.~2017--Avr.~2018}{Stage en année de Césure}{Valwin}{Service Informatique}{Nantes--France}{Amélioration des outils de producation de site de web de pharmacie.}
+\cventry{Sep.--Oct. 2017}{Formation en année de Césure}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{Portage de Trampoline RTOS sur un microcontrôleur SAM3X8E basé sur un processeur ARM Cortex-M3.}
+\cventry{Avr.--Aou. 2017}{Stage 2ème année}{Universidad Complutense}{GASS (Grupo de Análisis, Seguridad y Sistemas)}{Madrid--Spain}{Travail de Recherche en analyse forensique.}
+\cventry{Jui.--Aou. 2016}{Stage 1ère année}{CCL}{Service Informatique}{Castres--France}{Développement web et logiciel pour une entreprise commerciale.}
+
+\newpage
+
+\section{Projets de recherche}
+\subsection{Post-doc}
+\cvline{titre}{Fuzzing de machines à états pour les protocoles de communication}
+\cvline{responsables}{Kostis Sagonas et Bengt Jonsson}
+\cvline{description}{Le fuzzing est une technique de test qui consiste à fournir des entrées aléatoires au système testé jusqu'à ce qu'une erreur se produise.
+Les protocoles de communication ont la spécificité d'implémenter (généralement) des machines à états.
+Ces machines à états peuvent être apprises à l'aide de techniques d'apprentissage de modèles.
+Puis, on peut guider le fuzzing afin d'explorer tous les états, et donc le plus grand nombre de comportements possible du système.
+}
+\subsection{Thèse de Doctorat}
 \cvline{titre}{Génération automatique de code VHDL pour des Chargeurs de Véhicules Électriques}
 \cvline{direction}{Olivier H. Roux, Mikaël Briday et Malek Ghanes}
-\cvline{description}{L'objectif de cette thèse est d'être capable de générer automatiquement un circuit logique (décrit en VHDL) réalisant une commande décrite en Simulink, sur une cible FPGA. Le circuit engendré doit respecté des contraintes temporelles (chemin critique maximal) et des contraintes de ressources (unité logiques limités). Cette thèse fait partie de la chaire industrielle Renault - Centrale Nantes.}
-\cvline{date}{2019--2022}
+\cvline{description}{Cette thèse s'inscrit dans le cadre d'une collaboration avec l'entreprise automobile Renault, et a pour objectif de synthétiser des circuits sur FPGA, avec des contraintes de ressources et de temps.
+Nous avons travaillé sur la synthèse d'un pipeline optimal et sur son utilisation pour le multiplexage temporel, c'est-à-dire la fusion de portions de circuits identiques en séquençant leur accès.
+Pour résoudre ce problème, nous le réduisons à un problème d'accessibilité optimale dans un nouveau modèle de réseau de Petri temporisé que nous avons introduit, avec des transitions retardables qui peuvent manquer leur date d'exécution et une action spécifique appelée reset qui remet à zéro les horloges de toutes les transitions.
+Nous avons étudié l'expressivité de ce modèle et proposé un algorithme d'exploration symbolique.}
+%\cvline{date}{2019--2022}
 
 \section{Langues}
 \cvlanguage{Français}{Langue maternelle}{}
@@ -53,25 +87,9 @@
 \cvdoubleitem{Versioning}{Git}{Formatage}{\LaTeX}
 
 \section{Loisirs}
-\cvlistdoubleitem{Cirque}{Bricolage}
-\cvlistdoubleitem{Escalade}{Arts Plastiques}
+\cvline{ }{Escalade, Cirque, Bricolage, Arts Plastiques}
 
 \newpage
-\section{Expérience Professionnelle}
-\cventry{Jui.--Aou. 2016}{Stage 1ère année}{CCL}{Service Informatique}{Castres--France}{Développement web et logiciel pour une entreprise commerciale.}
-\cventry{Avr.--Aou. 2017}{Stage 2ème année}{Universidad Complutense}{GASS (Grupo de Análisis, Seguridad y Sistemas)}{Madrid--Spain}{Travail de Recherche en analyse forensique.}
-\cventry{Sep.--Oct. 2017}{Formation en année de Césure}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{Portage de Trampoline RTOS sur un microcontrôleur SAM3X8E basé sur un processeur ARM Cortex-M3.}
-\cventry{Nov.~2017--Avr.~2018}{Stage en année de Césure}{Valwin}{Service Informatique}{Nantes--France}{Amélioration des outils de producation de site de web de pharmacie.}
-\cventry{Avr.--Aou. 2019}{Stage de 3ème année}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{Travail de Recherche portant sur le control de modèles formels avec du temps et des coûts.}
-\cventry{Sep.~2019--$\cdots$}{Thèse de Doctorat}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{%
-	\begin{itemize}
-		\item Développement d'une approche de synthèse de pipeline avec des contraintes de temps et de ressources, basée sur des Réseaux de Petri Temporisés;
-		\item Implémentation d'un outil de compilation Simulink vers VHDL;
-		\item Construction d'un cours de VHDL pour des master M1 (master CORO à l'ECN);
-		\item Enseignements et encadrement de projet d'étudiants (en master et dans le cursus ingénieur de l'ECN).
-	\end{itemize}
-	}
-
 \renewcommand{\refname}{Publications}
 \nocite{*}
 \bibliographystyle{plain}

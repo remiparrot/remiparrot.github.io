@@ -35,25 +35,11 @@
 \maketitle
 
 \section{Education}
-\cventry{2019--2022}{PhD}{Centrale Nantes (ECN)}{Nantes}{\textit{Automatic Generation of VHDL Code for Electric Vehicle Chargers}}{}
+\cventry{2019--2022}{PhD}{Centrale Nantes (ECN)}{Nantes}{\textit{Timed Petri Nets for the synthesis of pipelined circuits}}{}
 \cventry{2015--2019}{Graduate Engineering School}{Centrale Nantes (ECN)}{Nantes}{\textit{Computer Science and Research}}{}
 \cventry{2013--2015}{Preparatory Classes}{Lycée Bellevue}{Toulouse}{\textit{Physics and Engineering}}{Intensive preparation for French Engineering School}
 \cventry{2013}{High School Diploma}{Lycée La Borde Basse}{Castres}{\textit{Major in Science}}{}
 
-\section{Languages}
-\cvlanguage{French}{Native language}{}
-\cvlanguage{English}{Fluent}{(level C1)}
-\cvlanguage{Spanish}{Fluent}{(level C1)}
-
-\section{Computing Tools}
-\cvdoubleitem{Languages}{C, C++, Python, VHDL}{Compilation}{GCC, GDB, Xilinx Vivado}
-\cvdoubleitem{Model Checking}{Roméo, Uppaal}{Compiler}{Flex, Bison, Galgas}
-\cvdoubleitem{Versioning}{Git}{Formatting}{\LaTeX}
-
-\section{Hobbies}
-\cvline{ }{Climbing, handwork, juggling, art}
-
-\newpage
 \section{Experience}
 \cventry{Nov.~2022--$\dots$}{Post-doc}{Uppsala Universitet}{CSD (Computer Science Division)}{Uppsala--Sweden}{Research on stateful fuzzing for communication protocol.}
 \cventry{Sep.~2019--Nov.~2022}{PhD Thesis}{LS2N}{STR (Système Temps Réel)}{Nantes--France}{%
@@ -70,6 +56,8 @@
 \cventry{Apr.--Aug. 2017}{2nd year Internship}{Universidad Complutense}{GASS (Grupo de Análisis, Seguridad y Sistemas)}{Madrid--Spain}{Research work of forensic analysis.}
 \cventry{Jul.--Aug. 2016}{1st year Internship}{CCL}{IT service}{Castres--France}{Web and Software development for a commercial company.}
 
+\newpage
+
 \section{Research projects}
 \subsection{Post-doc}
 \cvline{title}{Stateful fuzzing of communication protocols}
@@ -78,10 +66,26 @@
 \subsection{PhD Thesis}
 \cvline{title}{Timed Petri Nets for the synthesis of pipelined circuits}
 \cvline{supervisors}{Olivier H. Roux, Mikaël Briday and Malek Ghanes}
-\cvline{description}{This thesis was part of a collaboration with the automotive company Renault, with the objective of synthesizing resource and time constraint circuits on FPGA. We worked on the synthesis of optimal pipeline and on its usage for time-multiplexing, i.e., the merging of identical circuit portions by sequencing their access. To solve this problem, we reduce it to an optimal reachability problem in a new Timed Petri net model that we introduced, with \emph{delayable} transitions that can miss their firing date and a specific action called \emph{reset} that resets the clocks of all transitions. We studied the expressivity of this model and proposed a symbolic exploration algorithm.}
+\cvline{description}{This thesis was part of a collaboration with the automotive company Renault, with the objective of synthesizing resource and time constraint circuits on FPGA. 
+We worked on the synthesis of optimal pipeline and on its usage for time-multiplexing, i.e., the merging of identical circuit portions by sequencing their access.
+To solve this problem, we reduce it to an optimal reachability problem in a new Timed Petri net model that we introduced, with \emph{delayable} transitions that can miss their firing date and a specific action called \emph{reset} that resets the clocks of all transitions.
+We studied the expressivity of this model and proposed a symbolic exploration algorithm.}
 %This model turned out to be equivalent to a one-clock automaton.
 %But an overclass, the Timed Petri Nets with delayable transitions (without reset), turns out to be incomparable, in terms of expressivity in weak semantics, with the classes of Temporal or Timed Petri nets in dense or discrete time.
 %\cvline{date}{2019--2022}
+
+\section{Languages}
+\cvlanguage{French}{Native language}{}
+\cvlanguage{English}{Fluent}{(level C1)}
+\cvlanguage{Spanish}{Fluent}{(level C1)}
+
+\section{Computing Tools}
+\cvdoubleitem{Languages}{C, C++, Python, VHDL}{Compilation}{GCC, GDB, Xilinx Vivado}
+\cvdoubleitem{Model Checking}{Roméo, Uppaal}{Compiler}{Flex, Bison, Galgas}
+\cvdoubleitem{Versioning}{Git}{Formatting}{\LaTeX}
+
+\section{Hobbies}
+\cvline{ }{Climbing, handwork, juggling, art}
 
 \newpage
 \renewcommand{\refname}{Publications}
