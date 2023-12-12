@@ -59,23 +59,40 @@
 			</div>
         </div>
         <div class="col-md-8">
-					<h2>About me</h2>
-					<h3>Ongoing work</h3>
+					<!-- <h2>About me</h2> --!>
+					<h3>Current position</h3>
 					<p>
-						I am currently doing a post-doc with <a href="https://user.it.uu.se/~kostis/">Kostis Sagonas</a> and <a href="https://user.it.uu.se/~bengt/">Bengt Jonsson</a> at <a href="http://uu.se">Uppsala University</a>.
+						I am currently working at <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a> - <a href="http://www.ls2n.fr/">LS2N</a> as a temporary teaching and research fellow.
+					</p>
+					<p>
+						Most of the teaching I am in charge of is part of the engineer training <a href="https://www.ec-nantes.fr/formation/ingenieur-de-specialite/systemes-embarques-communicants">ITII-SEC</a> (Communicating Embedded System).
+					</p>
+					<p>
+						For the research part, i am currently working in the field of games theory, in particular focusing on weighted timed games.
+						Some ongoing work in collaboration with <a href="https://pagesperso.ls2n.fr/~lime-d/">Didier Lime</a> will be soon published.
+					</p>
+					<h3>Post-Doc (2022-2023)</h3>
+					<p>
+						During one year I had the opportunity to work as a post-doc with <a href="https://user.it.uu.se/~kostis/">Kostis Sagonas</a> and <a href="https://user.it.uu.se/~bengt/">Bengt Jonsson</a> at <a href="http://uu.se">Uppsala University</a>.
 						This work is part of the <a href="https://assist-project.github.io/">aSSIsT</a> project which focuses on cybersecurity for the IoT.
 					</p>
 					<p>
-						Our goal is to find memory related vulnerabilities in communication protocol implementations (with a particular focus on DTLS).
+						Our goal was to find memory related vulnerabilities in communication protocol implementations (with a particular focus on DTLS).
 						To do so we apply a testing technique called fuzzing, which consists in providing random inputs to the system under test until a bug occurs.
 					</p>
 					<p>
 						Communications protocols have the specificity to (generally) implement state machines.
 						We propose to exploit this particularity by driving our fuzzing with a state-aware approach.
-						First we build a state machine of the system under test with a <a href="https://dx.doi.org/10.14722/ndss.2023.23068">model learning techniques</a>.
-						Then we generate inputs for the system under test, such that it places the system each state and <em>start to fuzz</em> from there.
-				</p>
-					<h3>PhD thesis</h3>
+						First we build a state machine of the system under test with a <a href="https://dx.doi.org/10.14722/ndss.2023.23068">model learning technique</a>.
+						Then we generate concrete inputs for the system under test that cover all the states of the state machine.
+						The concrete inputs are then used to replace the system in each state and to <em>start the fuzzing</em> from there.
+					</p>
+					<p>
+						This work is still ongoing, but should be soon released.
+						We developped a tool, a fuzzer called AFL-ML (based on <a href="https://github.com/aflnet/aflnet">AFLNet</a>).
+						We also developped a experimental environment and benchmark with several implementations of DLTS and EDHOC, in order to compare with the state of the art tools.
+					</p>
+					<h3>PhD thesis (2019-2022)</h3>
 					<p>
 						I had the chance to do my PhD thesis under the joint direction of
 						<a href="http://pagesperso.ls2n.fr/~roux-o/">Olivier H. Roux</a>,
@@ -97,7 +114,7 @@
 						After playing with it for some time, this model turned out to be very interesting on its own!
 						(some nice expressivity results <a href="https://hal.science/hal-03952599">here</a>)
 					</p>
-					<h3>Master thesis</h3>
+					<h3>Master thesis (2019)</h3>
 					<p>
 						I had the opportunity to work under the supervision of <a href="http://pagesperso.ls2n.fr/~lime-d/">Didier Lime</a> for master thesis at
 						<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
@@ -162,7 +179,7 @@
     <hr>
   </body>
 	<footer class="text-center text-muted">
-			<p class="float-right">Last update: 10/05/2023</p>
+			<p class="float-right">Last update: 12/12/2023</p>
 	</footer>
 	<script src="/assets/jquery.slim.min.js"></script>
 	<script src="/assets/bootstrap.bundle.min.js"></script>
