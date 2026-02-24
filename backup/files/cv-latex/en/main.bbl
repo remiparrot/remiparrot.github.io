@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+
+\bibitem{komenda-WODES-24}
+Jan Komenda, S\'ebastien Lahaye, R\'emi Parrot, and Olivier~H. Roux.
+\newblock {Weakly strong semantics of Time Petri Nets for performance
+  evaluations}.
+\newblock In {\em 17th International Workshop on Discrete Event Systems
+  (WODES'24)}, Rio de Janeiro, Brazil, April 2024. IFAC.
+
+\bibitem{parrot-WODES-22}
+R\'emi Parrot, Hanifa Boucheneb, Mika\"el Briday, and Olivier~H. Roux.
+\newblock {Expressiveness and analysis of Delayable Timed Petri Net}.
+\newblock In {\em 16th International Workshop on Discrete Event Systems
+  (WODES'22)}, Prague, Czechia, September 2022. IFAC.
+
+\bibitem{parrot-ARITH-21}
+R\'emi Parrot, Mika\"el Briday, and Olivier~H. Roux.
+\newblock {Pipeline Optimization using a Cost Extension of Timed Petri Nets}.
+\newblock In {\em The 28th IEEE International Symposium on Computer Arithmetic
+  (ARITH 2021)}. IEEE, June 2021.
+
+\bibitem{parrot-MSR-21}
+R{\'e}mi Parrot, Mika{\"e}l Briday, and Olivier~H Roux.
+\newblock {R{\'e}seaux de Petri temporis{\'e}s pour la conception et
+  v{\'e}rification de circuits pipelin{\'e}s}.
+\newblock In {\em {Mod{\'e}lisation des Syst{\`e}mes R{\'e}actifs (MSR'21)}},
+  Paris, France, November 2021.
+
+\bibitem{parrot-ICATPN-21}
+R\'emi Parrot, Mika\"el Briday, and Olivier~H. Roux.
+\newblock {Timed Petri Nets with Reset for Pipelined Synchronous Circuit
+  Design}.
+\newblock In {\em The 42th International Conference on Application and Theory
+  of Petri Nets and Concurrency (Petri Nets 2021)}, volume 12734 of {\em
+  Lecture Notes in Computer Science}. Springer, June 2021.
+
+\bibitem{parrot-DEDS-22}
+R{\'{e}}mi Parrot, Mikaël Briday, and Olivier~H. Roux.
+\newblock Design and verification of pipelined circuits with timed petri nets.
+\newblock {\em Discrete Event Dynamic Systems}, 33(1):1--24, dec 2022.
+
+\bibitem{parrot-FORMATS-20}
+R\'emi Parrot and Didier Lime.
+\newblock Backward symbolic optimal reachability in weighted timed automata.
+\newblock In Nathalie Bertrand and Nils Jansen, editors, {\em 18th
+  International Conference on Formal Modeling and Analysis of Timed Systems
+  (FORMATS 2020)}, Lecture Notes in Computer Science, pages 41--57, Vienna,
+  Austria, September 2020. Springer.
+
+\end{thebibliography}

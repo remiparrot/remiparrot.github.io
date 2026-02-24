@@ -2,38 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Rémi Parrot</title>
   <id>/atom.xml</id>
-  <updated>2022-03-21T12:00:00Z</updated>
+  <updated>2026-02-24T12:00:00Z</updated>
   <link href="http://remiparrot.github.io/" />
   <link href="http://remiparrot.github.io/atom.xml" rel="self" />
   <author>
     <name>Rémi Parrot</name>
   </author>
-  <subtitle type="text">PhD student</subtitle>
+  <subtitle type="text">Assitant professor</subtitle>
   
   <entry>
     <title type="text">About me</title>
     <id>http://remiparrot.github.io/</id>
-    <updated>2022-03-21T12:00:00Z</updated>
+    <updated>2026-02-24T12:00:00Z</updated>
     <published>2022-03-21T12:00:00Z</published>
     <link href="http://remiparrot.github.io/" />
     <author>
       <name>Rémi Parrot</name>
     </author>
     <content type="html"><![CDATA[
-            <p>
-			I am currently working on my PhD thesis under the joint direction of
-			<a href="http://pagesperso.ls2n.fr/~roux-o/">Olivier H. Roux</a>,
-			<a href="http://pagesperso.ls2n.fr/~briday-m/">Mikaël Briday</a> and
-			<a href="https://www.ls2n.fr/annuaire/Malek%20GHANES/">Malek Ghanes</a> at
-			<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
-			I started this work on October 2019 and aim at finishing on October 2022.
-			</p>
-			<p>
-			The objective is to be able to automatically generate a circuit (described in VHDL)
-			performing an algorithm described in Simulink, with a specific FPGA target.
-			This circuit must meet time (maximal critical path) and resource (maximal logical units) constraints.
-			The thesis is part of a collaboration with the automotive company Renault.
-			</p>
+      <p>I am assistant professor within <a
+      href="https://www.univ-nantes.fr/">Nantes Université</a> - <a
+      href="https://www.ec-nantes.fr/">École Centrale de Nantes</a>. I
+      belong to the <a href="https://www.ls2n.fr/equipe/str/"
+      title="Systèmes Temps Réel">STR</a> research team at <a
+      href="https://www.ls2n.fr/">LS2N</a>.</p>
 
 ]]></content>
   </entry>

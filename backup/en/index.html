@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rémi Parrot">
+    <title>Rémi Parrot</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css">
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/custom.css" rel="stylesheet" type="text/css">
+    <link href="/atom.xml" rel="alternate" type="application/atom+xml" title="Site Title" />
+  </head>
+  <body>
+    <div class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="/en/">Rémi Parrot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse main-menu-item collapse" id="navbarResponsive">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/en/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/en/research/">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/en/teaching/">Teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/en/contact/">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+			  <a class="nav-link" href="/fr/"><span class="flag-icon flag-icon-fr"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+			<div class="container w-75">
+				<img src="/img/id.jpg" alt="id-photo" class="img-thumbnail rounded-circle">
+			</div>
+			<div class="d-flex justify-content-center mt-3">
+				<div class="p-2">
+					<a href="https://orcid.org/0000-0002-1943-8171"><img alt="ORCID logo" src="/assets/ORCIDiD.svg" width="35"/></a>
+				</div>
+				<div class="p-2">
+					<a class="btn btn-secondary" href="/files/cv_en.pdf">CV</a>
+				</div>
+			</div>
+        </div>
+        <div class="col-md-8">
+					<!-- <h2>About me</h2> --!>
+					<h3>Current position</h3>
+					<p>
+						I am currently working at <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a> - <a href="http://www.ls2n.fr/">LS2N</a> as a temporary teaching and research fellow.
+					</p>
+					<p>
+						Most of the teaching I am in charge of is part of the engineer training <a href="https://www.ec-nantes.fr/formation/ingenieur-de-specialite/systemes-embarques-communicants">ITII-SEC</a> (Communicating Embedded System).
+					</p>
+					<p>
+						For the research part, i am currently working in the field of games theory, in particular focusing on weighted timed games.
+						Some ongoing work in collaboration with <a href="https://pagesperso.ls2n.fr/~lime-d/">Didier Lime</a> will be soon published.
+					</p>
+					<h3>Post-Doc (2022-2023)</h3>
+					<p>
+						During one year I had the opportunity to work as a post-doc with <a href="https://user.it.uu.se/~kostis/">Kostis Sagonas</a> and <a href="https://user.it.uu.se/~bengt/">Bengt Jonsson</a> at <a href="http://uu.se">Uppsala University</a>.
+						This work is part of the <a href="https://assist-project.github.io/">aSSIsT</a> project which focuses on cybersecurity for the IoT.
+					</p>
+					<p>
+						Our goal was to find memory related vulnerabilities in communication protocol implementations (with a particular focus on DTLS).
+						To do so we apply a testing technique called fuzzing, which consists in providing random inputs to the system under test until a bug occurs.
+					</p>
+					<p>
+						Communications protocols have the specificity to (generally) implement state machines.
+						We propose to exploit this particularity by driving our fuzzing with a state-aware approach.
+						First we build a state machine of the system under test with a <a href="https://dx.doi.org/10.14722/ndss.2023.23068">model learning technique</a>.
+						Then we generate concrete inputs for the system under test that cover all the states of the state machine.
+						The concrete inputs are then used to replace the system in each state and to <em>start the fuzzing</em> from there.
+					</p>
+					<p>
+						This work is still ongoing, but should be soon released.
+						We developped a tool, a fuzzer called AFL-ML (based on <a href="https://github.com/aflnet/aflnet">AFLNet</a>).
+						We also developped a experimental environment and benchmark with several implementations of DLTS and EDHOC, in order to compare with the state of the art tools.
+					</p>
+					<h3>PhD thesis (2019-2022)</h3>
+					<p>
+						I had the chance to do my PhD thesis under the joint direction of
+						<a href="http://pagesperso.ls2n.fr/~roux-o/">Olivier H. Roux</a>,
+						<a href="http://pagesperso.ls2n.fr/~briday-m/">Mikaël Briday</a> and
+						<a href="https://www.ls2n.fr/annuaire/Malek%20GHANES/">Malek Ghanes</a> at
+						<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
+						This work started on October 2019 and finished it on November 2022.
+					</p>
+					<p>
+						The objective was to be able to automatically generate a circuit (described in VHDL)
+						performing an algorithm described in Simulink, with a specific FPGA target.
+						This circuit must meet time (maximal critical path) and resource (maximal logical units) constraints.
+						The thesis was part of a collaboration with the automotive company Renault.
+					</p>
+					<p>
+						This work introduces new methods for the optimization of <a href="https://hal.science/hal-03464317">pipeline synthesis</a> and to allow <a href="https://hal.science/hal-03952519">circuit folding</a> (or <em>time-multiplexing</em>).
+						It was also an opportunity to contribute in the field of formal methods.
+						We have been led to design a <a href="https://hal.science/hal-03266806">new model</a> of Petri Net with time, with the specificity of having transitions that can wait to fire (delayable) and a synchronous firing (maximal step semantics).
+						After playing with it for some time, this model turned out to be very interesting on its own!
+						(some nice expressivity results <a href="https://hal.science/hal-03952599">here</a>)
+					</p>
+					<h3>Master thesis (2019)</h3>
+					<p>
+						I had the opportunity to work under the supervision of <a href="http://pagesperso.ls2n.fr/~lime-d/">Didier Lime</a> for master thesis at
+						<a href="http://www.ls2n.fr/">LS2N</a>, <a href="http://www.ec-nantes.fr/">École Centrale de Nantes</a>.
+						We carried out some works on weighted timed Automata and Games.
+						This led to an algorithm to compute optimal reachability in weighted timed Automata, based on a <a href="https://hal.science/hal-02939596">backward symbolic exploration</a>.
+					</p>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="card border-light mb-3">
+					  <div class="card-header">Interests</div>
+					  <div class="card-body">
+						<div class="card-text">
+							<ul>
+								<li>Formal Methods</li>
+								<li>Model-Checking</li>
+								<li>Automata &#38; Petri Nets</li>
+								<li>Circuit Synthesis</li>
+								<li>Fuzzing</li>
+							</ul>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="card border-light mb-3">
+					  <div class="card-header">Education</div>
+					  <div class="card-body">
+						<div class="card-text">
+						  <table class="table">
+							<tbody>
+								<tr>
+									<th scope="row"><i class="bi bi-mortarboard-fill" style="font-size: 2rem"></i></th>
+									<td>
+										PhD in Computer Science, 2019-2022<br/>
+										<em class="text-muted">École Centrale de Nantes - LS2N</em>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class="bi bi-mortarboard-fill" style="font-size: 2rem"></i></th>
+									<td>
+										Graduate Engineering School, 2015-2019<br/>
+										<em class="text-muted">École Centrale de Nantes</em>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class="bi bi-mortarboard-fill" style="font-size: 2rem"></i></th>
+									<td>
+										Preparatory Classes, 2013-2015<br/>
+										<em class="text-muted">Lycée Bellevue, Toulouse</em>
+									</td>
+								</tr>
+							</tbody>
+						  </table>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </body>
+	<footer class="text-center text-muted">
+			<p class="float-right">Last update: 12/12/2023</p>
+	</footer>
+	<script src="/assets/jquery.slim.min.js"></script>
+	<script src="/assets/bootstrap.bundle.min.js"></script>
+</html>
