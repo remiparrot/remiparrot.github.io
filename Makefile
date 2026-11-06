@@ -1,5 +1,5 @@
 DATE = $(shell date '+%Y-%m-%d')
-BUILD_DIR = build/
+BUILD_DIR = docs/
 SRC_DIR = src/
 
 all:
