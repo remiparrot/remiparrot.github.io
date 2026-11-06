@@ -1,17 +1,91 @@
-/*
 html{
-font-size: 20px;
-font-family: "Charter","Georgia",'Times New Roman',serif;
+  font-size: 14pt;
+  font-family: 'Courier New','Georgia','Times New Roman',serif;
 }
+
 body{
-line-height: 1.3;
+  line-height: 1.3;
 }
+h1,h2,h3,h4{
+  font-family: arial, sans;
+}
+h2{
+  border-bottom: 4px solid;
+}
+h3{
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+a:link {
+  color: black;
+}
+a:visited {
+  color: dimgray;
+}
+a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+abbr {
+  text-decoration-style: dashed;
+}
+abbr:hover {
+  text-decoration-style: solid;
+}
+
+footer{
+  text-align: center;
+  font-size: 15px;
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+}
+
+footer .container{
+  border-top: 1px solid;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.intro .left-column {
+  flex: 30%;
+}
+.intro .right-column {
+  flex: 70%;
+}
+
+.student .left-column {
+  flex: 35%;
+}
+.student .right-column {
+  flex: 65%;
+}
+
+/*
 article
 */
-.container{
-max-width: 800px;
-margin: auto;
-}
 /*
 #logo			{ vertical-align: middle; margin-right: 10px; }
 h1,h2,h3,h4		{ font-family: arial, sans; }
