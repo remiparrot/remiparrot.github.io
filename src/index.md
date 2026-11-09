@@ -19,7 +19,7 @@ I belong to the [STR](https://www.ls2n.fr/equipe/str/ "Systèmes Temps Réel") r
 ::: news
 ## News
 - [Nov 27] Co-organise la 16ème édition de <abbr title="Modélisation des Systèmes Réactifs">MSR</abbr> avec [Rosa Abbou](https://www.univ-nantes.fr/rosa-abbou)
-- [Jun 26] Participate to the GT Verif Annual Meeting ([slides](/files/slides/20261102-gtverif.pdf))
+- [Nov 26] Participate to the GT Verif Annual Meeting ([slides](/files/slides/20261102-gtverif.pdf))
 - [Jun 26] Participate to the 18th edition of <abbr title="Workshop on Discrete Event Systems">WODES</abbr>
 - [Apr 26] Co-organize the 11th edition of the workshop <abbr title="International Workshop on Synthesis of Complex Parameters">SynCop</abbr> with [B Srivathsan](https://cmi.ac.in/~sri/)
 - [Nov 25] Participe à la 15ème édition de <abbr title="Modélisation des Systèmes Réactifs">MSR</abbr>
